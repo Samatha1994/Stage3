@@ -21,6 +21,11 @@
 
 **Bash file name:** job_stage3.sh
 
+**Bash Scripts:**
+
+https://github.com/Samatha1994/Bash_scripts/blob/main/job_stage3_generate_indices.sh
+https://github.com/Samatha1994/Bash_scripts/blob/main/job_stage3.sh
+
 **Bash Command to kick off the job:** sbatch job_stage3.sh
 
 **Bash command to check the status of the job:** 
