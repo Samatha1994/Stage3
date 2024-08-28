@@ -8,7 +8,9 @@
 **Expected Outputs:**                  (Path: /homes/samatha94/ExAI_inputs_and_outputs/Stage3_Results)
 1) Google_images
    Google_images/neuron_<neuron_id>/solution1/<concept_name>/<image>.jpg
+   
    Google_images/neuron_<neuron_id>/solution2/<concept_name>/<image>.jpg
+   
    Google_images/neuron_<neuron_id>/solution3/<concept_name>/<image>.jpg
    
 3) evaluation/neuron<neuron_id>_solution<solution_id>_evaluation_set.csv
