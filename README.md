@@ -17,7 +17,43 @@
 3) evaluation/neuron<neuron_id>_solution<solution_id>_evaluation_set.csv
 4) verification/neuron<neuron_id>_solution<solution_id>_verification_set.csv
 
+#Instructions to Set Up the Environment and Run the Python Script:
 
+1) Install Python 3.11.5
+
+   Ensure Python 3.11.5 is installed on your system by executing below command
+   
+   python --version
+
+2) Set Up a Virtual Environment
+
+   Install virtualenv if it is not already installed
+   
+   pip install virtualenv
+
+3) Create a virtual environment named 'venv'
+
+   python -m venv venv
+
+4) Activate the Virtual Environment
+
+   On macOS/Linux:
+   
+   source venv/bin/activate
+   
+   On Windows:
+   
+   venv\Scripts\activate
+
+5) Install Required Python Packages:
+
+   pip install tensorflow Pillow scipy pandas scikit-learn gdown
+
+6) Run the Python Script
+
+   python main.py
+
+#Steps to Run the Script on BeoCat:
 
 **Bash file name:** job_stage3.sh
 
