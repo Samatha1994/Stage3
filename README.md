@@ -72,5 +72,6 @@ sacct --format=JobID,JobName,State,ReqMem,MaxRSS,Start,End,TotalCPU,Elapsed,NCPU
 
 **Bash Command to cancel the job:** scancel job_id
 
-**Guide to install python-magic-bin manually on Beocat:**
+**Guide to install python-magic-bin manually on Beocat:** https://github.com/Samatha1994/ExAI_related_documents/blob/main/installing%20python%20magic%20bin%20manually.docx
+
 
