@@ -17,7 +17,7 @@
 3) evaluation/neuron<neuron_id>_solution<solution_id>_evaluation_set.csv
 4) verification/neuron<neuron_id>_solution<solution_id>_verification_set.csv
 
-#Instructions to Set Up the Environment and Run the Python Script:
+# Instructions to Set Up the Environment and Run the Python Script:
 
 1) Install Python 3.11.5
 
@@ -53,7 +53,7 @@
 
    python main.py
 
-#Steps to Run the Script on BeoCat:
+# Steps to Run the Script on BeoCat:
 
 **Bash file name:** job_stage3.sh
 
