@@ -47,7 +47,7 @@
 
 5) Install Required Python Packages:
 
-   pip install tensorflow Pillow scipy pandas scikit-learn gdown
+   pip install tensorflow Pillow pandas scikit-learn keras opencv-python requests python-magic python-magic-bin pygoogle_image
 
 6) Run the Python Script
 
