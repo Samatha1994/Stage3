@@ -1,11 +1,11 @@
 # Stage3: Parallelized Image Retrieval and Classification
 
 **Required Inputs:**
-1) config_files/ neuron_<neuron_id>_results_ecii_V2.txt     (Path: /homes/samatha94/ExAI_inputs_and_outputs/Stage1_Results/config_files)
-2) model_resnet50V2_10classes_retest2023June.h5             (Path: "/homes/samatha94/ExAI_inputs_and_outputs/Stage1_Results/model_resnet50V2_10classes_retest2023June.h5")
+1) config_files/ neuron_<neuron_id>_results_ecii_V2.txt     (_Path: /homes/samatha94/ExAI_inputs_and_outputs/Stage1_Results/config_files_)
+2) model_resnet50V2_10classes_retest2023June.h5             (_Path: /homes/samatha94/ExAI_inputs_and_outputs/Stage1_Results/model_resnet50V2_10classes_retest2023June.h5_)
 
 
-**Expected Outputs:**                  (Path: /homes/samatha94/ExAI_inputs_and_outputs/Stage3_Results)
+**Expected Outputs:**                  (_Path: /homes/samatha94/ExAI_inputs_and_outputs/Stage3_Results_)
 1) Google_images
 
    Google_images/neuron_<neuron_id>/solution1/<concept_name>/<image>.jpg
@@ -68,7 +68,7 @@ https://github.com/Samatha1994/Bash_scripts/blob/main/job_stage3.sh
 
 sacct --format=JobID,JobName,State,ReqMem,MaxRSS,Start,End,TotalCPU,Elapsed,NCPUS,NNodes,NodeList --jobs= <job_id>
 
-**Log file:** my_job_output_<job_id>.txt (Path: /homes/samatha94/)
+**Log file:** my_job_output_<job_id>.txt (_Path: /homes/samatha94/_)
 
 **Bash Command to cancel the job:** scancel job_id
 
