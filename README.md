@@ -23,35 +23,35 @@
 
    Ensure Python 3.11.5 is installed on your system by executing below command
    
-   python --version
+         python --version
 
 2) Set Up a Virtual Environment
 
    Install virtualenv if it is not already installed
    
-   pip install virtualenv
+         pip install virtualenv
 
 3) Create a virtual environment named 'venv'
 
-   python -m venv venv
+         python -m venv venv
 
 4) Activate the Virtual Environment
 
    On macOS/Linux:
    
-   source venv/bin/activate
+         source venv/bin/activate
    
    On Windows:
    
-   venv\Scripts\activate
+         venv\Scripts\activate
 
 5) Install Required Python Packages:
 
-   pip install tensorflow Pillow pandas scikit-learn keras opencv-python requests python-magic python-magic-bin pygoogle_image
+         pip install tensorflow Pillow pandas scikit-learn keras opencv-python requests python-magic python-magic-bin pygoogle_image
 
 6) Run the Python Script
 
-   python main.py
+         python main.py
 
 **Steps to Run the Script on BeoCat:**
 
