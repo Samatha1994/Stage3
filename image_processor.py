@@ -35,13 +35,18 @@ def process_and_classify_images(feature_map_model, test_directory, new_classes, 
         class_directory = os.path.join(test_directory, class_name)
         for image_name in os.listdir(class_directory):
             image_path = os.path.join(class_directory, image_name)
-            img = image.load_img(image_path, target_size=(224, 224))
-            img = image.img_to_array(img)
-            img = np.expand_dims(img, axis=0)
-            img = rescale_generator.standardize(img)
-            test_images.append(img)
-            filenames.append(image_name)
-            class_names.append(class_name)
+            try:
+               img = image.load_img(image_path, target_size=(224, 224))
+               img = image.img_to_array(img)
+               img = np.expand_dims(img, axis=0)
+               img = rescale_generator.standardize(img)
+               test_images.append(img)
+               filenames.append(image_name)
+               class_names.append(class_name)
+            except Exception as e:
+                # Log the problematic file and continue
+                print(f"Failed to process image {image_path}: {e}")
+                continue
 
     print(class_name)
     test_images = np.concatenate(test_images)
