@@ -12,7 +12,7 @@ from tensorflow.keras.layers import Input, AveragePooling2D, Dropout, Flatten, D
 from tensorflow.keras.models import Model, load_model
 
 #-----------------------------------------------------------------------------------------------
-#removed as create =_model is not called anywhere in stage3 code
+#removed below code as create =_model is not called anywhere in stage3 code
 #-----------------------------------------------------------------------------------------------
 
 # def create_model(num_classes):
@@ -32,7 +32,7 @@ from tensorflow.keras.models import Model, load_model
 #     for layer in base_model.layers:
 #         layer.trainable = False
 #     return model
-
+#-----------------------------------------------------------------------------------------------
 
 def load_and_analyze_model(model_path):
     model = load_model(model_path)
