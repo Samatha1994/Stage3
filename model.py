@@ -11,24 +11,27 @@ from tensorflow.keras.applications import ResNet50V2
 from tensorflow.keras.layers import Input, AveragePooling2D, Dropout, Flatten, Dense
 from tensorflow.keras.models import Model, load_model
 
+#-----------------------------------------------------------------------------------------------
+#removed as create =_model is not called anywhere in stage3 code
+#-----------------------------------------------------------------------------------------------
 
-def create_model(num_classes):
-    print("[INFO] preparing model...")
-    base_model = ResNet50V2(weights="imagenet", include_top=False, input_tensor=Input(shape=(224, 224, 3)))
-    print(len(base_model.layers))
+# def create_model(num_classes):
+#     print("[INFO] preparing model...")
+#     base_model = ResNet50V2(weights="imagenet", include_top=False, input_tensor=Input(shape=(224, 224, 3)))
+#     print(len(base_model.layers))
     
 
-    head_model = base_model.output
-    head_model = AveragePooling2D(pool_size=(7, 7))(head_model)
-    head_model = Flatten(name="flatten")(head_model)
-    head_model = Dense(64, activation="relu")(head_model)
-    head_model = Dropout(0.5)(head_model)
-    head_model = Dense(num_classes, activation="softmax")(head_model)
+#     head_model = base_model.output
+#     head_model = AveragePooling2D(pool_size=(7, 7))(head_model)
+#     head_model = Flatten(name="flatten")(head_model)
+#     head_model = Dense(64, activation="relu")(head_model)
+#     head_model = Dropout(0.5)(head_model)
+#     head_model = Dense(num_classes, activation="softmax")(head_model)
 
-    model = Model(inputs=base_model.input, outputs=head_model)
-    for layer in base_model.layers:
-        layer.trainable = False
-    return model
+#     model = Model(inputs=base_model.input, outputs=head_model)
+#     for layer in base_model.layers:
+#         layer.trainable = False
+#     return model
 
 
 def load_and_analyze_model(model_path):
